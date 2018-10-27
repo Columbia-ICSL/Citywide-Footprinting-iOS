@@ -14,6 +14,10 @@
 		BD2414952184D752008B9F83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD2414932184D752008B9F83 /* LaunchScreen.storyboard */; };
 		BD2414A02184D752008B9F83 /* CitywideFootprintingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD24149F2184D752008B9F83 /* CitywideFootprintingTests.swift */; };
 		BD2414AB2184D752008B9F83 /* CitywideFootprintingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2414AA2184D752008B9F83 /* CitywideFootprintingUITests.swift */; };
+		BD38AB062184E559001C5AA1 /* GraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD38AB052184E559001C5AA1 /* GraphViewController.swift */; };
+		BD38AB082184E7F6001C5AA1 /* Artwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD38AB072184E7F6001C5AA1 /* Artwork.swift */; };
+		BD38AB142184EAF0001C5AA1 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD38AB112184EA94001C5AA1 /* Charts.framework */; };
+		BD38AB152184EAF0001C5AA1 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BD38AB112184EA94001C5AA1 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +35,42 @@
 			remoteGlobalIDString = BD2414862184D750008B9F83;
 			remoteInfo = CitywideFootprinting;
 		};
+		BD38AB102184EA94001C5AA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD38AB0B2184EA94001C5AA1 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 65AD9E95D9ED4DC0BD73A743;
+			remoteInfo = Charts;
+		};
+		BD38AB122184EA94001C5AA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD38AB0B2184EA94001C5AA1 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1CBBC58C6CE1EBEE9852CE41;
+			remoteInfo = ChartsTests;
+		};
+		BD38AB162184EAF0001C5AA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD38AB0B2184EA94001C5AA1 /* Charts.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A58A4ED274A941CA248EA921;
+			remoteInfo = Charts;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BD38AB182184EAF0001C5AA1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BD38AB152184EAF0001C5AA1 /* Charts.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		BD2414872184D750008B9F83 /* CitywideFootprinting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CitywideFootprinting.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +86,9 @@
 		BD2414A62184D752008B9F83 /* CitywideFootprintingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CitywideFootprintingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD2414AA2184D752008B9F83 /* CitywideFootprintingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitywideFootprintingUITests.swift; sourceTree = "<group>"; };
 		BD2414AC2184D752008B9F83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD38AB052184E559001C5AA1 /* GraphViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphViewController.swift; sourceTree = "<group>"; };
+		BD38AB072184E7F6001C5AA1 /* Artwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artwork.swift; sourceTree = "<group>"; };
+		BD38AB0B2184EA94001C5AA1 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../../../Charts-master 2/Charts.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD38AB142184EAF0001C5AA1 /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,8 +140,11 @@
 		BD2414892184D750008B9F83 /* CitywideFootprinting */ = {
 			isa = PBXGroup;
 			children = (
+				BD38AB0B2184EA94001C5AA1 /* Charts.xcodeproj */,
 				BD24148A2184D750008B9F83 /* AppDelegate.swift */,
 				BD24148C2184D750008B9F83 /* ViewController.swift */,
+				BD38AB052184E559001C5AA1 /* GraphViewController.swift */,
+				BD38AB072184E7F6001C5AA1 /* Artwork.swift */,
 				BD24148E2184D750008B9F83 /* Main.storyboard */,
 				BD2414912184D752008B9F83 /* Assets.xcassets */,
 				BD2414932184D752008B9F83 /* LaunchScreen.storyboard */,
@@ -125,6 +171,15 @@
 			path = CitywideFootprintingUITests;
 			sourceTree = "<group>";
 		};
+		BD38AB0C2184EA94001C5AA1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BD38AB112184EA94001C5AA1 /* Charts.framework */,
+				BD38AB132184EA94001C5AA1 /* ChartsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,10 +190,12 @@
 				BD2414832184D750008B9F83 /* Sources */,
 				BD2414842184D750008B9F83 /* Frameworks */,
 				BD2414852184D750008B9F83 /* Resources */,
+				BD38AB182184EAF0001C5AA1 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				BD38AB172184EAF0001C5AA1 /* PBXTargetDependency */,
 			);
 			name = CitywideFootprinting;
 			productName = CitywideFootprinting;
@@ -215,6 +272,12 @@
 			mainGroup = BD24147E2184D750008B9F83;
 			productRefGroup = BD2414882184D750008B9F83 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = BD38AB0C2184EA94001C5AA1 /* Products */;
+					ProjectRef = BD38AB0B2184EA94001C5AA1 /* Charts.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				BD2414862184D750008B9F83 /* CitywideFootprinting */,
@@ -223,6 +286,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		BD38AB112184EA94001C5AA1 /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = BD38AB102184EA94001C5AA1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BD38AB132184EA94001C5AA1 /* ChartsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ChartsTests.xctest;
+			remoteRef = BD38AB122184EA94001C5AA1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		BD2414852184D750008B9F83 /* Resources */ = {
@@ -256,7 +336,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD38AB062184E559001C5AA1 /* GraphViewController.swift in Sources */,
 				BD24148D2184D750008B9F83 /* ViewController.swift in Sources */,
+				BD38AB082184E7F6001C5AA1 /* Artwork.swift in Sources */,
 				BD24148B2184D750008B9F83 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,6 +371,11 @@
 			isa = PBXTargetDependency;
 			target = BD2414862184D750008B9F83 /* CitywideFootprinting */;
 			targetProxy = BD2414A72184D752008B9F83 /* PBXContainerItemProxy */;
+		};
+		BD38AB172184EAF0001C5AA1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Charts;
+			targetProxy = BD38AB162184EAF0001C5AA1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -431,6 +518,7 @@
 		BD2414B02184D752008B9F83 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZK7PNMYZ8N;
@@ -442,13 +530,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ColumbiaICSL.CitywideFootprinting;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		BD2414B12184D752008B9F83 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZK7PNMYZ8N;
@@ -460,7 +549,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ColumbiaICSL.CitywideFootprinting;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
